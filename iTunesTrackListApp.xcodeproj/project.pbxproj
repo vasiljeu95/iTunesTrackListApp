@@ -13,6 +13,9 @@
 		E38E39702415777600B20B39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E38E396E2415777600B20B39 /* Main.storyboard */; };
 		E38E39722415777A00B20B39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E38E39712415777A00B20B39 /* Assets.xcassets */; };
 		E38E39752415777A00B20B39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E38E39732415777A00B20B39 /* LaunchScreen.storyboard */; };
+		E38E397E241577A500B20B39 /* SearchResponce.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38E397D241577A500B20B39 /* SearchResponce.swift */; };
+		E38E39812415788E00B20B39 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38E39802415788E00B20B39 /* SearchViewController.swift */; };
+		E38E39832415797A00B20B39 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38E39822415797A00B20B39 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		E38E39712415777A00B20B39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E38E39742415777A00B20B39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E38E39762415777A00B20B39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E38E397D241577A500B20B39 /* SearchResponce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponce.swift; sourceTree = "<group>"; };
+		E38E39802415788E00B20B39 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		E38E39822415797A00B20B39 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +65,31 @@
 				E38E39682415777600B20B39 /* AppDelegate.swift */,
 				E38E396A2415777600B20B39 /* SceneDelegate.swift */,
 				E38E396C2415777600B20B39 /* ViewController.swift */,
+				E38E397F2415786E00B20B39 /* Controllers */,
+				E38E397C2415778E00B20B39 /* Model */,
 				E38E396E2415777600B20B39 /* Main.storyboard */,
 				E38E39712415777A00B20B39 /* Assets.xcassets */,
 				E38E39732415777A00B20B39 /* LaunchScreen.storyboard */,
 				E38E39762415777A00B20B39 /* Info.plist */,
 			);
 			path = iTunesTrackListApp;
+			sourceTree = "<group>";
+		};
+		E38E397C2415778E00B20B39 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E38E397D241577A500B20B39 /* SearchResponce.swift */,
+				E38E39822415797A00B20B39 /* NetworkService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E38E397F2415786E00B20B39 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E38E39802415788E00B20B39 /* SearchViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E38E39812415788E00B20B39 /* SearchViewController.swift in Sources */,
 				E38E396D2415777600B20B39 /* ViewController.swift in Sources */,
 				E38E39692415777600B20B39 /* AppDelegate.swift in Sources */,
 				E38E396B2415777600B20B39 /* SceneDelegate.swift in Sources */,
+				E38E39832415797A00B20B39 /* NetworkService.swift in Sources */,
+				E38E397E241577A500B20B39 /* SearchResponce.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
