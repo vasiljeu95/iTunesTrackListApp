@@ -10,12 +10,11 @@ import Foundation
 
 struct SearchResponse: Decodable {
     var resultCount: Int
-    var result: [Track]
+    var results: [Track]
 }
 
 struct Track: Decodable {
-    var trackName: String
-    var collectionName: String?
-    var artistName: String
+    var trackName, artistName, collectionName: String?
     var artworkUrl100: String?
 }
+
