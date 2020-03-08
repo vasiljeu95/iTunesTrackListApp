@@ -87,8 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				E38E39802415788E00B20B39 /* SearchViewController.swift */,
-				E38E398924158F6200B20B39 /* TrackCell.swift */,
-				E38E398B24158F8600B20B39 /* TrackCell.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -96,6 +94,8 @@
 		E38E398624158CF100B20B39 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E38E398924158F6200B20B39 /* TrackCell.swift */,
+				E38E398B24158F8600B20B39 /* TrackCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";

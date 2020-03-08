@@ -20,17 +20,9 @@ class NetworkService {
             guard let data = data else { return }
             
             do {
-                let _ = try JSONDecoder().decode(Track.self, from: data)
+                let tracksProperty = try JSONDecoder().decode(SearchResponse.self, from: data)
                 DispatchQueue.main.async {
-//                    let trackName = tracksProperty.trackName
-//                    let artistName = tracksProperty.artistName
-//                    let collectionName = tracksProperty.collectionName
-//                    let imageIcon = tracksProperty.artworkUrl100
-//
-//                    self.trackNameLabel.text = ("\(trackName ?? "Unknown")")
-//                    self.artistNameLabel.text = ("\(artistName ?? "Unknown")")
-//                    self.collectionNameLabel.text = ("\(collectionName ?? "Unknown")")
-//                    self.trackImageView.setImage(imageURL: imageIcon)
+                    completion(tracksProperty)
                 }
             } catch {
                 print(error.localizedDescription)
